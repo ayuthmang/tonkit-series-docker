@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  web:
+    image: python:alpine #image
+    container_name: web #--name web
+    ports:
+      - 5000:5000 # -p 5000:5000
+    command: python -m http.server 5000
+    volumes:
+      - /Users/ayuth/Desktop:/Desktop
